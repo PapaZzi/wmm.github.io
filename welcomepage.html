@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Welcome Page</title>
+    
+<style type="text/css">
+
+#myVideo {
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+}
+
+.content{
+    margin-top: -10px;
+	margin-bottom: -10px;
+    width: 100%;
+	height:723px;
+	background-color: black;
+}
+
+.text{
+    position: fixed;
+    font-size:100px;
+	bottom: 0;
+    font-family: "Times New Roman";
+    color: #ecc577;
+    width: 100%;
+    padding: 250px;
+	border: 1px solid white;
+}
+
+.text:hover{
+    color: white;
+}
+
+.btn {
+    padding-top:8px;
+    text-decoration:none;
+    width: 570px;
+	height: 45px;
+    font-size:30px;
+    color: white;
+	font-family: "Times New Roman";
+    background: #194754;
+    text-align: center;
+    display: table;
+    position: absolute;
+    top: 60%;
+    left:33%;
+    border-radius: 28px;
+}
+
+.btn:hover {
+   background: white;
+   color: #194754;
+}
+
+</style>
+</head>
+<body>
+<!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="video/welcome.mp4" type="video/mp4">
+</video>
+
+
+<div class="content">
+    <div class="text">
+	    <p>WATCH FOR WHALES</p>
+	</div>
+    <a class="btn" href="home.html">Welcome To Toy Photograph</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Love only you</title>
+    <link href="css/slide.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+body{
+    background-color: #f8f5ee;
+	margin: 0;
+    padding: 0;
+	width: 100%;
+	background-image:url('img/fl1.jpg'),url('img/fl2.jpg');
+	background-size: 40%;
+	background-repeat:no-repeat;
+	background-position:0px 447px, 920px 220px;
+	
+}
+
+.header{
+	    padding:30px;
+		text-align: center;
+		background:url('img/bg0.jpg');
+		
+		
+		
+}
+
+.header img{
+    position: absolute;
+	width: 250px;
+	margin-top: -65px;
+	margin-left: -690px;
+	
+}
+
+.title{
+	color: #fff;
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #5693bf, 0 0 40px #5693bf, 0 0 50px #5693bf, 0 0 60px #5693bf, 0 0 70px #5693bf;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #78c0f5, 0 0 40px #78c0f5, 0 0 50px #78c0f5, 0 0 60px #78c0f5, 0 0 70px #78c0f5, 0 0 80px #78c0f5;
+  }
+}
+
+.nav{
+	width:100%;
+	background:#504a32;
+	padding-left:200px;
+	height:40px;
+	border-spacing:0px;
+	opacity:0.95;
+}
+.nav ul{
+	text-align:center;
+	display:inline-block;
+	list-style: none;
+	padding:0px;
+	margin: 0px;
+	position:absolute;
+}
+.nav ul li{
+
+	float:left;
+	margin-top:6.5px;
+}
+.nav ul li a {
+	width:180px;
+	color:white;
+	display:block;
+	text-decoration:none;
+	font-size:15px;
+	text-align:center;
+	padding:5px;
+	border-radius:10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+.nav a:hover{
+	background:#837e6b;
+}
+.nav ul li ul{
+	background:#504a32;
+}
+.nav ul li ul li{
+	float:none;
+}
+.nav ul li ul{
+	display:none;
+}
+.nav ul li:hover ul{
+	display:block;
+}
+
+.slideshow-container img{
+    box-shadow: 5px 10px 18px #d4cdb5;
+	width:100%;
+}
+
+.text1{
+    padding-top: 0px;
+	text-align: center;
+	font-family: "KaiTi";
+	color: #504a32;
+}
+
+.footer{
+	margin-top: 100px;
+	background:#504a32;
+	padding:30px;
+	opacity:0.7;
+}
+.text2{
+	text-align:center;
+}
+.text2 p {
+    color: white;
+    font-size:15px;
+    margin: 0;
+}
+
+
+
+        .a{
+            position: relative;
+            width: 700px;
+            height: 400px;
+            border: #fff 10px solid;
+            background-color: rgb(120,140,200);
+            top: 100px;
+            border-radius: 20px;
+            overflow: hidden;
+			display: flex;
+			
+            
+        }
+        .b{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            left: 0;
+            margin: 75px 50px;
+            transition: 1s;
+        }
+        .b a{
+            text-decoration: none;
+            color: #fff;
+            font: 900 26px '';
+        }
+        .b h3{
+            transition: .5s 1s;
+            opacity: 0;
+            color: rgb(30,210,200);
+        }
+        .b span{
+            transition: .5s 1s;
+            color: #fff;
+            font: 500 15px '';
+            position: absolute;
+            top: 70px;
+        }
+        .c{
+            position: absolute;
+            top: -130px;
+            right: -240px;
+        }
+        .d,.e{
+            position: absolute;
+            right: calc(var(--i)*100px);
+            width: calc(var(--w)*40px);
+            height: 500px;
+            overflow: hidden;
+            border-radius: 100px;
+            transform: rotateZ(220deg) translate(0,0);
+            background: rgb(240,220,150);
+            transition: .5s .5s;
+        }
+        .d:nth-child(2){
+            background: rgb(240,190,230);
+        }
+        .e{
+            left: -470px;
+            top: -140px;
+            width: 70px;
+            background-color: rgb(90,220,150);
+        }
+        .a:hover .c div{
+            transition: .5s calc(var(--i)*.1s);
+            transform: rotateZ(220deg) translate(-200px,400px);
+        }
+        .a:hover .b{
+            transition: 1s .5s;
+            left: 370px;
+        }
+        .a:hover .b span{
+            transition: 1s .5s;
+            top: 105px;
+        }
+        .a:hover .b h3{
+            transition: 1s .5s;
+            opacity: 1;
+        }
+        .f{
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            
+            background-size: cover;
+            margin: 50px;
+            opacity: 0;
+            transition: .5s;
+        }
+        .a:hover .f{
+            transition: 1s 1.3s;
+            opacity: 1;
+        }
+
+		.m{
+            display: flex;
+            justify-content: center;
+			 
+	
+
+        }
+
+</style>
+</head>
+<body>
+
+
+
+    <div class="header">
+	    <img src="img/logo.png" title="Discover LOGO" alt="LOGO"/>
+	    <h1 class="title">Love only you</h1>
+		<p>An <b>toy photography</b> website</p>
+	</div>
+	
+	    <div class="nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">About▼</a>
+                <ul>
+                    <li><a href="page/goldenship.html">Horse Racing Doll</a></li>
+                    <li><a href="page/leo.html">Garage Kit</a></li>
+
+                </ul>
+            </li>
+            <li><a href="page/gallery.html">Gallery</a>
+            </li>
+            <li><a href="aboutme.html">About Me</a>
+            </li>
+            <li><a href="page/contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+	<div class="m">
+<div class="a">
+        <div class="b">
+		
+            <a href="#">LOVE ONLY YOU</a>
+            <h3>Contact：12321</h3>
+            <span>This is a toy company</br></br>If you are interested in </br><br/>Please contact us</br></br>Thank you</span>
+        </div>
+        <div class="c">
+            <div class="d" style="--i:1;--w:1.5"></div>
+            <div class="d" style="--i:2;--w:1.6"></div>
+            <div class="d" style="--i:3;--w:1.4"></div>
+            <div class="d" style="--i:4;--w:1.7"></div>
+            <div class="e" style="--i:1"></div>
+        </div>
+        <div class="f"><img src="img/logo.png" height="300" width="300"></div>
+    </div>
+
+</div>
+
+
+
+
+ 
+
+  
+
+
+
+<script src="js/slide.js"></script>
+</body>
+</html>

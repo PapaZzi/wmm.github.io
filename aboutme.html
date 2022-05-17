@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us</title>
+    <link href="css/slide.css" rel="stylesheet" type="text/css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100; 0 ,200;0,300;0,400;0,500;0,600;0,700;1,100;1, 200; 1,300;1,400; 1,500;1,600; 1,700&displa y=swap" rel="stylesheet">
+
+<style type="text/css">
+body{
+    background-color: #f8f5ee;
+	margin: 0;
+    padding: 0;
+	width: 100%;
+	background-image:url('img/fl1.jpg'),url('img/fl2.jpg');
+	background-size: 40%;
+	background-repeat:no-repeat;
+	background-position:0px 628px, 920px 220px;
+}
+
+#myBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #b9753a; /* Set a background color */
+  color: #f8f5ee; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+	background-color: #313b41; /* Add a  background on hover */
+	color: #b9753a;
+}
+
+.header{
+	    padding:30px;
+		text-align: center;
+		background:url('img/bg0.jpg');
+}
+
+.header img{
+    position: absolute;
+	width: 250px;
+	margin-top: -65px;
+	margin-left: -690px;
+	
+}
+
+.title{
+	color: #fff;
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #5693bf, 0 0 40px #5693bf, 0 0 50px #5693bf, 0 0 60px #5693bf, 0 0 70px #5693bf;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #78c0f5, 0 0 40px #78c0f5, 0 0 50px #78c0f5, 0 0 60px #78c0f5, 0 0 70px #78c0f5, 0 0 80px #78c0f5;
+  }
+}
+
+.nav{
+	width:100%;
+	background:#504a32;
+	padding-left:200px;
+	height:40px;
+	border-spacing:0px;
+	opacity:0.95;
+}
+.nav ul{
+	text-align:center;
+	display:inline-block;
+	list-style: none;
+	padding:0px;
+	margin: 0px;
+	position:absolute;
+}
+.nav ul li{
+
+	float:left;
+	margin-top:6.5px;
+}
+.nav ul li a {
+	width:180px;
+	color:white;
+	display:block;
+	text-decoration:none;
+	font-size:15px;
+	text-align:center;
+	padding:5px;
+	border-radius:10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+.nav a:hover{
+	background:#837e6b;
+}
+.nav ul li ul{
+	background:#504a32;
+}
+.nav ul li ul li{
+	float:none;
+}
+.nav ul li ul{
+	display:none;
+}
+.nav ul li:hover ul{
+	display:block;
+}
+
+.text1{
+    padding-top: 100px;
+	text-align: center;
+	font-family: "KaiTi";
+	color: #504a32;
+}
+
+.footer{
+	margin-top: 100px;
+	background:#504a32;
+	padding:30px;
+	opacity:0.7;
+}
+
+.first-sections, .second-sections{
+    text-align: center;
+	padding-top: 100px;
+}
+.content1 {
+	padding-top: 50px;
+	font-size: 20px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 100 ;
+	max-width: 1500px;
+  	min-width: 1000px;
+	padding-left: 400px;
+}
+.first-sections h2, .second-sections h2, .third-section h2 {
+    font-weight: 800;
+    font-size: 50px;
+}
+.first-sections h2, .first-sections h3, .second-sections h2, .third-section h2 {
+    font-family: 'proxima-nova', sans-serif;
+	
+}
+
+.first-sections h3, .second-sections h3, .third-section h3 {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.black-border {
+    width: 50%;
+    border-bottom: 1px solid #000000;
+    margin: 0 auto;
+    height: 16px;
+}
+
+.container-text{
+	color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100 ;
+    text-transform: capitalize;
+    font-size: 45px;
+	margin-top:-100px;
+    margin-bottom: 20px;
+}
+
+.about{
+	width:100%;
+	padding: 78px 0px;
+}
+
+.about img{
+	height: auto;
+	width: 420px;
+}
+
+.mission-text{
+	width: 550px;
+}
+
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.main p{
+	font-size:20px ;
+}
+
+.container2 {
+    float: left;
+	margin-top: -10px;
+	margin-left: 25px;
+    width: 96%;
+	height:600px;
+	background-color: #c0e1d2#;
+}
+
+.container2 video{
+    width:50%;
+}
+
+.social {
+	margin-top: 30px;
+	margin-left: 400px;
+}
+
+.social a{
+	text-decoration: none;
+	color: #222;
+	font-size: 25px;
+	position: relative;
+	padding:0px 150px ;
+	
+}
+
+.social i{
+	height: 40px;
+	width: 40px;
+	background-color: lemonchiffon;
+	border: 1px solid #222;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+}
+
+.socialmedia{
+	font-weight: 800;
+    font-size: 50px;
+	margin-top: 30px;
+	margin-left: 800px;
+}
+
+.wrapper{
+	margin-top: 10%;
+}
+
+.wrapper h1{
+	font-family: 'Franklin Gothic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 52px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.team{
+	display: flex;
+	text-align: center;
+	width: auto;
+	justify-content: center;
+}
+
+.team .team_member{
+	background: rgb(255, 255, 255);
+	margin: 5px;
+	margin-bottom: 50px;
+	width: 300px;
+	padding: 20px;
+	line-height: 20px;
+	color: #8e8b8e;
+	position: relative;
+}
+
+.team .team_member h2{
+	color: black;
+	font-size: 26px;
+	margin-top: 50px;
+}
+
+.team .tea,.team_member p.role{
+	color:#ccc;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 12px 0;
+}
+
+.team .team_member .team_img {
+	width: 100px;
+	height:100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.team .team_member .team_img img{
+	width: 100px;
+	height: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 400px; 
+  padding-left: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column p{
+	font-style: arial;
+	color: blanchedalmond;
+	padding-top: 50px;
+	padding-left: 20px;
+}
+
+.column h2{
+	color: blanchedalmond;
+	font-size: 30px;
+	padding-left: 20px;
+}
+
+.column h6{
+	color: rgb(0, 0, 0);
+	padding-top: 50px;
+	padding-left: 20px;
+	font-style: arial;
+}
+
+.column h4{
+	color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+}
+
+.footer{
+	margin-top: 100px;
+	background:#504a32;
+	padding:30px;
+	opacity:0.7;
+}
+.text2{
+	text-align:center;
+}
+.text2 p {
+    color: white;
+    font-size:15px;
+    margin: 0;
+}
+
+
+</style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="header">
+	    <img src="img/logo.png" title="Discover LOGO" alt="LOGO"/>
+	    <h1 class="title">Love only you</h1>
+		<p>An <b>toy photography</b> website</p>
+	</div>
+	
+	    <div class="nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">About▼</a>
+                <ul>
+                    <li><a href="page/goldenship.html">Horse Racing Doll</a></li>
+                    <li><a href="page/leo.html">Garage Kit</a></li>
+
+                </ul>
+            </li>
+            <li><a href="page/gallery.html">Gallery</a>
+            </li>
+            <li><a href="aboutme.html">About Me</a>
+            </li>
+            <li><a href="contactus.html">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+
+  <section class="first-section second-sections third-section" id="section">
+	<div class="container2">
+		<video src="video/intro.mp4" type="video/mp4" controls></div>
+    <div class="container-text">
+      <h2>About Us</h2>
+      <h3>Who are we ?</h3>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="black-border"></div>
+        <p class="content1">We are a group of 4 students who come from Malaysia and China that is very enthusiastic about taking picture. Our main photo object is mostly is figures from all kind of species, which includes toy, anime figures, decoration and so on.
+			We created this portal to increase anime's influence by allowing people to learn about and watch anime figures.</p>
+      </div>
+    </div>
+  </section>
+<br>
+<br>
+<br>
+  <div class="row">
+	<div class="column right" style="background-image: url(img/surtr.jpg); width: 500;">
+	</div>
+	<div class="column left" style="background-color:rgb(0, 0, 0);">
+	  <h2>History</h2>
+	  <p>Our toy photography website was created on February 7, 2022 by Wan YiXuan , Ding YiChen , Kelvin Tan Yin Kang and Kelvin Cheong.</p>
+	</div>
+  </div>
+<br>
+<br>
+  <div class="row">
+	<div class="column left" style="background-color:rgb(255, 255, 255);">
+		<h1>Our mission</h1>
+		<h4>Post some photos about the exquisite figure,entice some like-minded or curious users to visit our website and take a look. </h4>
+	  </div>
+	<div class="column right" style="background-image: url(img/cy2.jpg); width: 500;">
+	</div>
+  </div>
+
+<section class="about">
+	<div class="main">
+		<img src="img/saber8.jpg">
+		<div class="mission-text">
+		<h1>Why use us?</h1>
+		<P>You may see some of the lovely figures and adorable dolls we shot on our website. The following functionalities are also available:</P>
+		</div>
+	</div>
+</section>
+
+<section class="about">
+	<div class="main">
+		<h2>360 Degree Preview</h2>
+		<div class="mission-text">
+		<img src="img/megumin5.jpg">
+		</div>
+	</div>
+</section>
+
+<section class="about">
+	<div class="main">
+		<img src="img/photo.jpg">
+		<div class="mission-text">
+		<h1>Gallery</h1>
+		</div>
+	</div>
+</section>
+
+<div class="wrapper">
+	<h1>Our Team</h1>
+	<div class="team">
+		<div class="team_member">
+		<div class="team_img">
+			<img src="img/pngegg(3).png" alt="team_member_image">
+		</div>
+			<h2>Wan YiXuan</h2>
+			<p class="role">Leader</p>
+		</div>
+		<div class="team_member">
+		<div class="team_img">
+			<img src="img/child-avatar-icon-flat-design-49096.png" alt="team_member_image">
+		</div>
+			<h2>Ding YiChen</h2>
+			<p class="role">Member</p>
+		</div>
+		<div class="team_member">
+		<div class="team_img">
+			<img src="img/147140.png" alt="team_member_image">
+		</div>
+			<h2>Kelvin Tan Yin Kang</h2>
+			<p class="role">Member</p>
+		</div>
+		<div class="team_member">
+		<div class="team_img">
+			<img src="img/clipart2487966.png" alt="team_member_image">
+		</div>
+			<h2>Kelvin Cheong</h2>
+			<p class="role">Member</p>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="socialmedia">
+	<h4>Social Media</h4>
+</div>
+<div class="social">
+	<a href="https://www.facebook.com/maxfactory1987"><i class="fab fa-facebook-f"></i></a>
+	<a href="https://twitter.com/mxf_official?lang=en"><i class="fab fa-twitter"></i></a>
+	<a href="https://www.instagram.com/gpointhobby/?hl=en"><i class="fab fa-instagram"></i></a>
+</div>
+    <div class="footer">
+        <div class="text2">
+            <p>&#169; 2022 Love Only You.com</p>
+        </div>
+    </div>
+<script src="js/totop.js"></script>	
+	
